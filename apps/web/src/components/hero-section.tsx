@@ -79,7 +79,7 @@ export default function HeroSection() {
 									preset="fade-in-blur"
 									speedSegment={0.3}
 									as="h1"
-									className="bg-gradient-to-r from-primary to-accent bg-clip-text font-extrabold text-5xl text-transparent leading-tight md:text-6xl"
+									className="bg-gradient-to-r from-primary to-accent bg-clip-text font-extrabold text-5xl text-primary leading-tight md:text-6xl"
 								>
 									BRIDY
 								</TextEffect>
@@ -109,21 +109,15 @@ export default function HeroSection() {
 									}}
 									className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-center lg:justify-start"
 								>
-									<div className="rounded-[calc(var(--radius-xl)+0.125rem)] border bg-foreground/10 p-0.5">
-										<Button
-											asChild
-											size="lg"
-											className="rounded-xl px-5 text-base"
+									<Button asChild>
+										<Link
+											href="https://forms.gle/swwezjY1ERLxp62QA"
+											target="_blank"
+											rel="noreferrer"
 										>
-											<Link
-												href="https://forms.gle/swwezjY1ERLxp62QA"
-												target="_blank"
-												rel="noopener noreferrer"
-											>
-												Participe da Pesquisa
-											</Link>
-										</Button>
-									</div>
+											Participe da Pesquisa
+										</Link>
+									</Button>
 
 									<Button variant="outline" asChild>
 										<Link
@@ -136,16 +130,6 @@ export default function HeroSection() {
 									</Button>
 								</AnimatedGroup>
 							</div>
-
-							<aside
-								className="pointer-events-none hidden h-72 w-full rounded-lg md:block lg:ml-8"
-								style={{
-									backgroundImage: "url('/textures/mint-pattern.svg')",
-									backgroundSize: "cover",
-									backgroundRepeat: "no-repeat",
-									backgroundPosition: "center",
-								}}
-							/>
 						</div>
 					</div>
 				</div>
