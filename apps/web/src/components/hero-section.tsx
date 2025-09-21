@@ -90,9 +90,16 @@ export default function HeroSection() {
 									as="p"
 									className="max-w-2xl text-lg text-muted-foreground"
 								>
-									✨ Quebrando muros, construindo pontes — estudamos desafios e
-									oportunidades para gerar insights que transformem como as
-									pessoas trabalham.
+									✨ Quebrando muros, construindo pontes
+								</TextEffect>
+
+								<TextEffect
+									preset="fade-in-blur"
+									speedSegment={0.3}
+									as="p"
+									className="max-w-2xl text-base text-muted-foreground/80"
+								>
+									🔎 Estudando desafios e oportunidades em diferentes áreas
 								</TextEffect>
 
 								<AnimatedGroup
@@ -115,7 +122,7 @@ export default function HeroSection() {
 											target="_blank"
 											rel="noreferrer"
 										>
-											Participe da Pesquisa
+											Participe da pesquisa
 										</Link>
 									</Button>
 

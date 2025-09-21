@@ -8,64 +8,74 @@ export default function Features() {
 			<div className="@container mx-auto max-w-5xl px-6">
 				<div className="text-center">
 					<h2 className="text-balance font-semibold text-4xl lg:text-5xl">
-						QUEM NÓS SOMOS?
+						Conheça a <span className="text-emerald-500">BRIDY</span>
 					</h2>
-					<p className="mx-auto mt-4 max-w-3xl">
-						Somos a <span className="font-semibold text-primary">BRIDY</span>,
-						um grupo de pesquisa independente que busca compreender de forma
-						mais profunda os desafios enfrentados por diferentes profissionais
-						em seu dia a dia.
+					<p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
+						Um grupo de pesquisa independente focado em gerar insights que
+						transformem como as pessoas trabalham
 					</p>
 				</div>
 				<div className="mx-auto mt-8 grid @min-4xl:max-w-full max-w-sm @min-4xl:grid-cols-3 gap-6 [--color-background:var(--color-muted)] [--color-card:var(--color-muted)] *:text-center md:mt-16 dark:[--color-muted:var(--color-zinc-900)]">
-					<Card className="group border-0 shadow-none">
+					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
 						<CardHeader className="pb-3">
 							<CardDecorator>
-								<Users className="size-6" aria-hidden />
+								<Users className="size-6 text-emerald-600" aria-hidden />
 							</CardDecorator>
 
-							<h3 className="mt-6 font-medium">Ouvir Profissionais</h3>
+							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
+								QUEM NÓS SOMOS?
+							</h3>
 						</CardHeader>
 
 						<CardContent>
 							<p className="text-sm">
-								Entendemos as rotinas e dificuldades de diferentes áreas
-								profissionais, coletando percepções que geram insights
-								acionáveis.
+								Somos a <strong>BRIDY</strong>, um grupo de pesquisa
+								independente que busca compreender de forma mais profunda os
+								desafios enfrentados por diferentes profissionais em seu dia a
+								dia.
 							</p>
 						</CardContent>
 					</Card>
 
-					<Card className="group border-0 shadow-none">
+					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
 						<CardHeader className="pb-3">
 							<CardDecorator>
-								<Target className="size-6" aria-hidden />
+								<Target className="size-6 text-emerald-600" aria-hidden />
 							</CardDecorator>
 
-							<h3 className="mt-6 font-medium">Mapear Padrões</h3>
+							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
+								QUAL O NOSSO OBJETIVO?
+							</h3>
 						</CardHeader>
 
 						<CardContent>
 							<p className="mt-3 text-sm">
-								Identificamos tendências e oportunidades que orientam melhorias
-								reais no mercado e nas formas de trabalho.
+								Nosso objetivo é ouvir profissionais de diferentes áreas,
+								entender suas rotinas, dificuldades e necessidades. A partir
+								disso, buscamos mapear padrões e gerar insights que possam
+								orientar transformações reais no mercado.
 							</p>
 						</CardContent>
 					</Card>
 
-					<Card className="group border-0 shadow-none">
+					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
 						<CardHeader className="pb-3">
 							<CardDecorator>
-								<MessageCircle className="size-6" aria-hidden />
+								<MessageCircle
+									className="size-6 text-emerald-600"
+									aria-hidden
+								/>
 							</CardDecorator>
 
-							<h3 className="mt-6 font-medium">Gerar Soluções</h3>
+							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
+								AJUDE A GERAR IMPACTO!
+							</h3>
 						</CardHeader>
 
 						<CardContent>
 							<p className="mt-3 text-sm">
-								A partir dos dados e análises, propomos soluções e recomendações
-								que podem orientar transformações reais.
+								Participe da nossa pesquisa! Usaremos os dados para revelar
+								desafios, entender necessidades e gerar soluções reais.
 							</p>
 						</CardContent>
 					</Card>
