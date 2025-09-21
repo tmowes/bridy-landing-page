@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
-import { Button } from "./ui/button";
+import { RainbowButton as Button } from "./ui/rainbow-button";
 
 export default function Header() {
 	return (

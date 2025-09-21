@@ -1,7 +1,7 @@
 import type { Variants } from "motion/react";
 import Link from "next/link";
 import { AnimatedGroup } from "@/components/ui/animated-group";
-import { Button } from "@/components/ui/button";
+import { RainbowButton as Button } from "@/components/ui/rainbow-button";
 import { TextEffect } from "@/components/ui/text-effect";
 
 const transitionVariants: { item: Variants } = {
@@ -125,7 +125,7 @@ export default function HeroSection() {
 										</Button>
 									</div>
 
-									<Button variant="ghost" asChild>
+									<Button variant="outline" asChild>
 										<Link
 											href="https://instagram.com/bridyoficial"
 											target="_blank"
