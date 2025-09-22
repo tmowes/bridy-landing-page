@@ -26,7 +26,7 @@ const transitionVariants: { item: Variants } = {
 
 export default function HeroSection() {
 	return (
-		<main className="overflow-hidden">
+		<main className="overflow-hidden py-6">
 			<div
 				aria-hidden
 				className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"
@@ -36,7 +36,7 @@ export default function HeroSection() {
 				<div className="-translate-y-87.5 -rotate-45 absolute top-0 left-0 h-320 w-60 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
 			</div>
 			<section>
-				<div className="relative pt-24 md:pt-36">
+				<div className="relative">
 					<AnimatedGroup
 						variants={{
 							container: {
@@ -72,7 +72,7 @@ export default function HeroSection() {
 						className="-z-10 absolute inset-0 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
 					/>
 
-					<div className="mx-auto max-w-7xl px-6">
+					<div className="container mx-auto px-3">
 						<div className="grid grid-cols-1 gap-8 text-center sm:mx-auto lg:mt-0 lg:mr-auto lg:grid-cols-2 lg:text-left">
 							<div className="space-y-6">
 								<TextEffect

@@ -4,31 +4,28 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export default function Features() {
 	return (
-		<section className="py-16 md:py-32">
-			<div className="@container mx-auto max-w-5xl px-6">
+		<section>
+			<div className="@container container mx-auto py-8">
 				<div className="text-center">
-					<h2 className="text-balance font-semibold text-4xl lg:text-5xl">
-						Conheça a <span className="text-emerald-500">BRIDY</span>
+					<h2 className="text-balance font-semibold text-4xl text-foreground/80 lg:text-5xl">
+						Conheça a <span className="text-primary">BRIDY</span>
 					</h2>
-					<p className="mx-auto mt-4 max-w-3xl text-muted-foreground">
+					<p className="mx-auto max-w-3xl text-balance py-4 text-muted-foreground">
 						Um grupo de pesquisa independente focado em gerar insights que
 						transformem como as pessoas trabalham
 					</p>
 				</div>
-				<div className="mx-auto mt-8 grid @min-4xl:max-w-full max-w-sm @min-4xl:grid-cols-3 gap-6 [--color-background:var(--color-muted)] [--color-card:var(--color-muted)] *:text-center md:mt-16 dark:[--color-muted:var(--color-zinc-900)]">
-					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
-						<CardHeader className="pb-3">
-							<CardDecorator>
-								<Users className="size-6 text-emerald-600" aria-hidden />
-							</CardDecorator>
-
-							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
-								QUEM NÓS SOMOS?
-							</h3>
+				<div className="mx-auto grid @min-4xl:max-w-full max-w-sm @min-4xl:grid-cols-3 gap-6 [--color-background:var(--color-muted)] [--color-card:var(--color-muted)] *:text-center dark:[--color-muted:var(--color-zinc-900)]">
+					<Card className="group border-0 bg-gradient-to-br from-primary/10 to-primary/20 shadow-none dark:from-primary/20 dark:to-primary/10">
+						<CardHeader>
+							<div className="-mt-6 h-24">
+								<CardDecorator>
+									<Users className="size-6 text-primary" aria-hidden />
+								</CardDecorator>
+							</div>
 						</CardHeader>
-
 						<CardContent>
-							<p className="text-sm">
+							<p className="text-balance text-muted-foreground text-sm">
 								Somos a <strong>BRIDY</strong>, um grupo de pesquisa
 								independente que busca compreender de forma mais profunda os
 								desafios enfrentados por diferentes profissionais em seu dia a
@@ -37,19 +34,17 @@ export default function Features() {
 						</CardContent>
 					</Card>
 
-					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
-						<CardHeader className="pb-3">
-							<CardDecorator>
-								<Target className="size-6 text-emerald-600" aria-hidden />
-							</CardDecorator>
-
-							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
-								QUAL O NOSSO OBJETIVO?
-							</h3>
+					<Card className="group border-0 bg-gradient-to-br from-primary/10 to-primary/20 shadow-none dark:from-primary/20 dark:to-primary/10">
+						<CardHeader>
+							<div className="-mt-6 h-24">
+								<CardDecorator>
+									<Target className="size-6 text-primary" aria-hidden />
+								</CardDecorator>
+							</div>
 						</CardHeader>
 
 						<CardContent>
-							<p className="mt-3 text-sm">
+							<p className="text-balance text-muted-foreground text-sm">
 								Nosso objetivo é ouvir profissionais de diferentes áreas,
 								entender suas rotinas, dificuldades e necessidades. A partir
 								disso, buscamos mapear padrões e gerar insights que possam
@@ -58,22 +53,19 @@ export default function Features() {
 						</CardContent>
 					</Card>
 
-					<Card className="group border-0 bg-gradient-to-br from-emerald-50 to-emerald-100/50 shadow-none dark:from-emerald-950/20 dark:to-emerald-900/10">
-						<CardHeader className="pb-3">
-							<CardDecorator>
-								<MessageCircle
-									className="size-6 text-emerald-600"
-									aria-hidden
-								/>
-							</CardDecorator>
-
-							<h3 className="mt-6 font-semibold text-emerald-700 dark:text-emerald-400">
-								AJUDE A GERAR IMPACTO!
-							</h3>
+					<Card className="group border-0 bg-gradient-to-br from-primary/10 to-primary/20 shadow-none dark:from-primary/20 dark:to-primary/10">
+						<CardHeader>
+							<div className="-mt-6 h-24">
+								<CardDecorator>
+									<MessageCircle className="size-6 text-primary" aria-hidden />
+								</CardDecorator>
+							</div>
 						</CardHeader>
 
 						<CardContent>
-							<p className="mt-3 text-sm">
+							<p className="text-balance text-muted-foreground text-sm">
+								<strong>AJUDE A GERAR IMPACTO!</strong>
+								<br />
 								Participe da nossa pesquisa! Usaremos os dados para revelar
 								desafios, entender necessidades e gerar soluções reais.
 							</p>
