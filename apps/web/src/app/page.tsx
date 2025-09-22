@@ -5,11 +5,13 @@ import { HeroSection } from "@/components/hero-section";
 
 export default function Home() {
 	return (
-		<div className="min-h-screen bg-gradient-to-br from-background to-muted/20">
-			<HeroSection />
-			<Features />
-			<CTA />
+		<>
+			<main className="flex-1 bg-gradient-to-br from-background to-muted/20">
+				<HeroSection />
+				<Features />
+				<CTA />
+			</main>
 			<Footer />
-		</div>
+		</>
 	);
 }

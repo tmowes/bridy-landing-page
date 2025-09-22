@@ -1,3 +1,4 @@
+import scrollbar from "tailwind-scrollbar";
 import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
 
@@ -29,6 +30,7 @@ const config: Config = {
 		},
 	},
 	plugins: [
+		scrollbar,
 		plugin(() => {
 			// small utilities that map to CSS variables
 			return {

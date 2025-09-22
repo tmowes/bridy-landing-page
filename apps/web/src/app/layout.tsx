@@ -27,10 +27,10 @@ export default function RootLayout(props: RootLayoutProps) {
 	return (
 		<html lang="pt-BR" suppressHydrationWarning>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${geistSans.variable} ${geistMono.variable} scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary/20 hover:scrollbar-thumb-primary/40 antialiased`}
 			>
 				<Providers>
-					<div className="grid h-svh grid-rows-[auto_1fr]">
+					<div className="flex min-h-screen flex-col">
 						<Header />
 						{props.children}
 					</div>
