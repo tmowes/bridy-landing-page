@@ -3,8 +3,7 @@ import "../styles/global.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import type { ReactNode } from "react";
-import Header from "@/components/header";
-import Providers from "@/components/providers";
+import { Providers } from "@/components/providers";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -29,12 +28,7 @@ export default function RootLayout(props: RootLayoutProps) {
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary/20 hover:scrollbar-thumb-primary/40 antialiased`}
 			>
-				<Providers>
-					<div className="flex min-h-screen flex-col">
-						<Header />
-						{props.children}
-					</div>
-				</Providers>
+				<Providers>{props.children}</Providers>
 			</body>
 		</html>
 	);

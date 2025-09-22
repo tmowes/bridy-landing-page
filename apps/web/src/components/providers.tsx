@@ -6,7 +6,7 @@ import { Toaster } from "./ui/sonner";
 
 type ProvidersProps = { children: ReactNode };
 
-export default function Providers(props: ProvidersProps) {
+export function Providers(props: ProvidersProps) {
 	return (
 		<ThemeProvider
 			attribute="class"

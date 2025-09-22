@@ -74,7 +74,7 @@ export function HeroSection() {
 
 					<div className="container mx-auto px-3">
 						<div className="grid grid-cols-1 gap-8 text-center sm:mx-auto lg:mt-0 lg:mr-auto lg:grid-cols-2 lg:text-left">
-							<div className="space-y-6">
+							<div className="space-y-3">
 								<TextEffect
 									preset="fade-in-blur"
 									speedSegment={0.3}
@@ -88,7 +88,7 @@ export function HeroSection() {
 									preset="fade-in-blur"
 									speedSegment={0.3}
 									as="p"
-									className="max-w-2xl text-lg text-muted-foreground"
+									className="max-w-2xl text-base text-muted-foreground"
 								>
 									✨ Quebrando muros, construindo pontes
 								</TextEffect>
@@ -97,7 +97,7 @@ export function HeroSection() {
 									preset="fade-in-blur"
 									speedSegment={0.3}
 									as="p"
-									className="max-w-2xl text-base text-muted-foreground/80"
+									className="max-w-2xl text-base text-muted-foreground"
 								>
 									🔎 Estudando desafios e oportunidades em diferentes áreas
 								</TextEffect>

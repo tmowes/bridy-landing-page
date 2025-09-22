@@ -1,9 +1,8 @@
-"use client";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import { RainbowButton as Button } from "./ui/rainbow-button";
 
-export default function Header() {
+export function Header() {
 	return (
 		<header className="sticky top-0 z-40 h-20 border-b bg-background/60 backdrop-blur-sm">
 			<div className="container mx-auto flex h-full flex-1 items-center justify-between px-4">

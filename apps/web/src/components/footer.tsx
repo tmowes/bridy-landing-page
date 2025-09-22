@@ -4,7 +4,7 @@ import { RainbowButton as Button } from "@/components/ui/rainbow-button";
 
 export function Footer() {
 	return (
-		<footer className="border-t bg-muted/30">
+		<footer className="border-t bg-muted/30 dark:bg-primary/10">
 			<div className="mask-radial-from-40% mask-radial-to-60% relative mx-auto duration-200 [--color-border:color-mix(in_oklab,var(--color-primary)10%,transparent)] group-hover:[--color-border:color-mix(in_oklab,var(--color-primary)20%,transparent)] dark:[--color-border:color-mix(in_oklab,var(--color-white)15%,transparent)] dark:group-hover:[--color-border:color-mix(in_oklab,var(--color-white)20%,transparent)]">
 				<div
 					aria-hidden

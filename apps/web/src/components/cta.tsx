@@ -1,6 +1,5 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-// import { InstagramIcon } from "@/components/icons/instagram";
 import { RainbowButton as Button } from "@/components/ui/rainbow-button";
 
 export function CTA() {
@@ -28,11 +27,6 @@ export function CTA() {
 							<ArrowRight className="ml-2 h-5 w-5" />
 						</Link>
 					</Button>
-
-					{/* <div className="flex items-center justify-center space-x-2 text-muted-foreground">
-						<InstagramIcon className="text-primary" />
-						<span>Siga @bridyoficial no Instagram para mais novidades</span>
-					</div> */}
 				</div>
 			</div>
 		</section>
