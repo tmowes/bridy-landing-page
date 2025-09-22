@@ -1,5 +1,7 @@
 import type { Variants } from "motion/react";
 import Link from "next/link";
+
+import { Logo } from "./logo";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { RainbowButton as Button } from "@/components/ui/rainbow-button";
 import { TextEffect } from "@/components/ui/text-effect";
@@ -72,23 +74,33 @@ export function HeroSection() {
 						className="-z-10 absolute inset-0 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
 					/>
 
-					<div className="container mx-auto px-3">
-						<div className="grid grid-cols-1 gap-8 text-center sm:mx-auto lg:mt-0 lg:mr-auto lg:grid-cols-2 lg:text-left">
-							<div className="space-y-3">
-								<TextEffect
-									preset="fade-in-blur"
-									speedSegment={0.3}
-									as="h1"
-									className="bg-gradient-to-r from-primary to-accent bg-clip-text font-extrabold text-5xl text-primary leading-tight md:text-6xl"
+					<div className="@container container mx-auto py-8 px-4 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+						<div className="text-center">
+							<div className="mx-auto max-w-3xl text-balance py-4 text-muted-foreground">
+
+								<AnimatedGroup
+									variants={{
+										container: {
+											visible: {
+												transition: {
+													staggerChildren: 0.05,
+													delayChildren: 0.75,
+												},
+											},
+										},
+										...transitionVariants,
+									}}
+									className="mt-6 flex flex-col items-center justify-center gap-3  sm:items-center lg:justify-start"
 								>
-									BRIDY
-								</TextEffect>
+									<Logo className="h-12 w-auto px-8" />
+								</AnimatedGroup>
+								
 
 								<TextEffect
 									preset="fade-in-blur"
 									speedSegment={0.3}
 									as="p"
-									className="max-w-2xl text-base text-muted-foreground"
+									className="max-w-3xl text-base text-muted-foreground py-6"
 								>
 									✨ Quebrando muros, construindo pontes
 								</TextEffect>
@@ -97,7 +109,7 @@ export function HeroSection() {
 									preset="fade-in-blur"
 									speedSegment={0.3}
 									as="p"
-									className="max-w-2xl text-base text-muted-foreground"
+									className="max-w-3xl text-base text-muted-foreground"
 								>
 									🔎 Estudando desafios e oportunidades em diferentes áreas
 								</TextEffect>
@@ -114,9 +126,9 @@ export function HeroSection() {
 										},
 										...transitionVariants,
 									}}
-									className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:items-center lg:justify-start"
+									className="mt-6 flex flex-col items-center justify-center gap-3  sm:items-center lg:justify-start"
 								>
-									<Button asChild>
+									<Button asChild className="px-8 py-6 text-lg">
 										<Link
 											href="https://forms.gle/swwezjY1ERLxp62QA"
 											target="_blank"

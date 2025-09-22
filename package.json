@@ -15,11 +15,13 @@
 		"dev:web": "turbo -F web dev",
 		"dev:server": "turbo -F server dev"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@biomejs/biome": "^2.2.4",
 		"tailwind-scrollbar": "^4.0.2",
 		"turbo": "^2.5.6"
 	},
-	"packageManager": "bun@1.2.22"
+	"packageManager": "bun@1.2.22",
+	"dependencies": {
+		"bun": "^1.2.22"
+	}
 }

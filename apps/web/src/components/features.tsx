@@ -1,5 +1,6 @@
 import { MessageCircle, Target, Users } from "lucide-react";
 import type { ReactNode } from "react";
+import { Logo } from "./logo";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export function Features() {
