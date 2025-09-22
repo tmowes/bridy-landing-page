@@ -1,6 +1,9 @@
 # Use the official Bun image as the base image
 FROM oven/bun:1.2.22-slim AS base
 
+# Install curl for health checks
+RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+
 # Install dependencies only when needed
 FROM base AS deps
 WORKDIR /app
@@ -55,6 +58,10 @@ EXPOSE 36934
 
 ENV PORT=36934
 ENV HOSTNAME="0.0.0.0"
+
+# Add health check for Coolify
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:36934/health || exit 1
 
 # Start the application
 CMD ["bun", "run", "apps/web/server.js"]
