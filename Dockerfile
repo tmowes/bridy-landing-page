@@ -12,7 +12,7 @@ COPY apps/web/package.json ./apps/web/
 COPY apps/web/tsconfig.json ./apps/web/
 
 # Install dependencies
-RUN bun install  --production
+RUN bun install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM base AS builder
