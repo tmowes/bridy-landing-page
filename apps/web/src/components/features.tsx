@@ -2,7 +2,7 @@ import { MessageCircle, Target, Users } from "lucide-react";
 import type { ReactNode } from "react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-export default function Features() {
+export function Features() {
 	return (
 		<section>
 			<div className="@container container mx-auto py-8">

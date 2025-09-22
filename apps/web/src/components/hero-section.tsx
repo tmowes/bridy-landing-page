@@ -24,7 +24,7 @@ const transitionVariants: { item: Variants } = {
 	},
 };
 
-export default function HeroSection() {
+export function HeroSection() {
 	return (
 		<main className="overflow-hidden py-6">
 			<div
