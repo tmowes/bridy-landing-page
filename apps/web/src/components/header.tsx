@@ -18,6 +18,7 @@ export function Header() {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-DJ93S761NS');
+          console.log('Google Analytics initialized');
         `}
       </Script>
 
