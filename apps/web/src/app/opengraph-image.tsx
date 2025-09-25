@@ -1,5 +1,4 @@
 import { ImageResponse } from 'next/og';
-import { LogoOGI } from '@/components/logo-ogi';
 
 export const runtime = 'edge';
 export const alt = 'BRIDY - Quebrando muros, construindo pontes';
@@ -7,9 +6,6 @@ export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
 export default async function OpenGraphImage() {
-  const interRegular = fetch(new URL('@/components/fonts/static/Inter_18pt-Regular.ttf', import.meta.url)).then((res) => res.arrayBuffer());
-  const interBold = fetch(new URL('@/components/fonts/static/Inter_18pt-Bold.ttf', import.meta.url)).then((res) => res.arrayBuffer());
-
   return new ImageResponse(
     (
       <div
@@ -25,23 +21,17 @@ export default async function OpenGraphImage() {
           padding: '40px',
         }}
       >
-        <div style={{ marginBottom: '20px' }}>
-          <LogoOGI className="h-5 w-auto" />
-        </div>
-
+        <img src="@/components/images/logo.png" width={200} height={200} style={{ marginBottom: '20px' }} />
         <h1
           style={{
             fontSize: '80px',
             fontWeight: 'bold',
             margin: '0',
             textAlign: 'center',
-            fontFamily: 'Inter Bold',
           }}
         >
           BRIDY
         </h1>
-
-        {/* Slogan */}
         <p
           style={{
             fontSize: '40px',
@@ -49,29 +39,12 @@ export default async function OpenGraphImage() {
             marginTop: '10px',
             textAlign: 'center',
             maxWidth: '800px',
-            fontFamily: 'Inter',
           }}
         >
           Quebrando muros, construindo pontes. Participe da pesquisa!
         </p>
       </div>
     ),
-    {
-      ...size,
-      fonts: [
-        {
-          name: 'Inter',
-          data: await interRegular,
-          style: 'normal',
-          weight: 400,
-        },
-        {
-          name: 'Inter Bold',
-          data: await interBold,
-          style: 'normal',
-          weight: 700,
-        },
-      ],
-    }
+    { ...size }
   );
 }
