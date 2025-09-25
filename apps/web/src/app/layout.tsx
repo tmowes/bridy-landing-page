@@ -16,8 +16,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Bridy",
-	description: "Bridy",
+	title: "BRIDY",
+	description: "Quebrando muros, construindo pontes. Participe da pesquisa!",
+	metadataBase: new URL("https://bridy.com.br"),
+	openGraph: {
+		title: "BRIDY",
+		description: "Quebrando muros, construindo pontes. Participe da pesquisa!",
+		url: "https://bridy.com.br",
+		siteName: "BRIDY",
+		images: [
+			{
+				url: "logo.png",
+				width: 160,
+				height: 160,
+			},
+		],
+		type: "website",
+	},
 };
 
 type RootLayoutProps = Readonly<{ children: ReactNode }>;
