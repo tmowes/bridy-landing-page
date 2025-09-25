@@ -3,6 +3,28 @@ import { Features } from "@/components/features";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'BRIDY',
+  description: 'Quebrando muros, construindo pontes. Participe da pesquisa!',
+  openGraph: {
+    title: 'BRIDY',
+    description: 'Quebrando muros, construindo pontes. Participe da pesquisa!',
+    url: 'https://bridy.com.br',
+    siteName: 'BRIDY',
+    images: [
+      {
+        url: 'https://bridy.com.br/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'BRIDY - Quebrando muros, construindo pontes',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+};
 
 export default function Home() {
 	return (

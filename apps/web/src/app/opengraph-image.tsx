@@ -25,12 +25,10 @@ export default async function OpenGraphImage() {
           padding: '40px',
         }}
       >
-        {/* Logo */}
         <div style={{ marginBottom: '20px' }}>
           <LogoOGI className="h-5 w-auto" />
         </div>
 
-        {/* Site Name */}
         <h1
           style={{
             fontSize: '80px',
