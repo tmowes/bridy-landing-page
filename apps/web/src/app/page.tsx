@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/hero-section";
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://bridy.com.br'),
   title: 'BRIDY',
   description: 'Quebrando muros, construindo pontes. Participe da pesquisa!',
   openGraph: {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     siteName: 'BRIDY',
     images: [
       {
-        url: 'https://bridy.com.br/opengraph-image',
+        url: '/opengraph-image',
         width: 1200,
         height: 630,
         alt: 'BRIDY - Quebrando muros, construindo pontes',
@@ -27,15 +28,15 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-	return (
-		<div className="flex min-h-svh flex-col bg-primary/15">
-			<Header />
-			<main className="flex-1 bg-gradient-to-br from-background to-muted/20">
-				<HeroSection />
-				<Features />
-				<CTA />
-			</main>
-			<Footer />
-		</div>
-	);
+  return (
+    <div className="flex min-h-svh flex-col bg-primary/15">
+      <Header />
+      <main className="flex-1 bg-gradient-to-br from-background to-muted/20">
+        <HeroSection />
+        <Features />
+        <CTA />
+      </main>
+      <Footer />
+    </div>
+  );
 }
