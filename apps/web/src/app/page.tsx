@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { HeroSection } from "@/components/hero-section";
 import Head from "next/head";
-import LogoOG from "@/images/logo.png";
+import LogoOG from "@/components/images/logo.png";
 
 export default function Home() {
   return (
