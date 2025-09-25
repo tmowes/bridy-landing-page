@@ -10,7 +10,7 @@ export const Logo = ({ className }: { className?: string }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={cn("h-5 w-auto", className)}
     >
-      <title>Sua Logo</title>
+      <title>BRIDY</title>
 	  
       <g transform="translate(0.000000,92.000000) scale(0.100000,-0.100000)"
 fill="var(--primary)" stroke="none">
