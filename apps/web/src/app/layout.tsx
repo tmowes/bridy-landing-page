@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 		siteName: "BRIDY",
 		images: [
 			{
-				url: "/logo.png",
+				url: "/logo.jpg",
 				width: 256,
 				height: 256,
 			},
